@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Search HAL</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Search HAL</a>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <form id="search-form" class="form-inline">
+            <input id="search-field" class="form-control mr-sm-2" type="search" placeholder="Search">
+            <button id="search-btn" class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<main role="main" class="container" style="font-size:0.8em; padding-top:120px">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col" width="15%">Publication date</th>
+            <th scope="col" width="30%">Title</th>
+            <th scope="col" width="40%">Abstract</th>
+            <th scope="col" width="15%">Authors</th>
+        </tr>
+        </thead>
+        <tbody id="response-list">
+        <!-- C'EST ICI QUE VONT ETRE AJOUTES LES REPONSES DE L'APPEL A L'API -->
+        </tbody>
+    </table>
+</main><!-- /.container -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="jquery-3.3.1.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
